@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 128
+      Handler: dev.rvz.generate.log.GenerateLog
+      CodeUri: /home/thomas/workspace/gerar-logs
+      Runtime: java11
+      Architectures:
+        - x86_64
